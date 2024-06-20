@@ -19,9 +19,9 @@ module.exports = {
       fontFamily: {
         'headings': ['Rubik', 'sans-serif'],
         'dText': ['Montserrat', 'sans-serif'],
-        'numbers' : ['Inter', 'sans-serif'],
-        'main' : ['League Spartan', 'sans-serif']
-      },
+        'numbers': ['Inter', 'sans-serif'],
+        'main': ['League Spartan', 'sans-serif']
+      }
     }
   },
   plugins: [],
