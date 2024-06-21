@@ -11,25 +11,25 @@ export default function Navbar() {
       <nav className="mx-auto flex max-w-7xl items-center justify-between p-6 lg:px-8 shadow-lg">
         {/* Logo */}
         <div className="flex lg:flex-1">
-          <Link href={"/"}>
+          <a href={"#top"}>
             <img className="h-10 w-auto" src="logo.png" alt="Logo" />
-          </Link>
+          </a>
         </div>
 
         {/* Middle Icons */}
         <Popover.Group className="hidden lg:flex gap-x-6 font-semibold leading-6">
-          <Link href={"/"} className="px-3 py-1.5 rounded hover:bg-zinc-200 transition ease-in duration-200">
+          <a href={"#about"} className="px-3 py-1.5 rounded hover:bg-zinc-200 transition ease-in duration-200">
             About Me
-          </Link>
-          <Link href={"/"} className="px-3 py-1.5 rounded hover:bg-zinc-200 transition ease-in duration-200">
+          </a>
+          <a href={"/"} className="px-3 py-1.5 rounded hover:bg-zinc-200 transition ease-in duration-200">
             Reviews
-          </Link>
-          <Link href={"/"} className="px-3 py-1.5 rounded hover:bg-zinc-200 transition ease-in duration-200">
+          </a>
+          <a href={"/"} className="px-3 py-1.5 rounded hover:bg-zinc-200 transition ease-in duration-200">
             Benefits
-          </Link>
-          <Link href={"/"} className="px-3 py-1.5 rounded hover:bg-zinc-200 transition ease-in duration-200">
+          </a>
+          <a href={"/"} className="px-3 py-1.5 rounded hover:bg-zinc-200 transition ease-in duration-200">
             Contact
-          </Link>
+          </a>
         </Popover.Group>
 
         {/* Right Buttons */}

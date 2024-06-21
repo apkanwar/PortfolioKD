@@ -14,7 +14,8 @@ module.exports = {
         'midnight-black': '#1B1C1E',
         'grey-black': '#545454',
         'artic-blue': '#F0F8FF',
-        'eazy-main': '#0099FF'
+        'eazy-main': '#0099FF',
+        'bmo-blue': '#0179C1'
       },
       fontFamily: {
         'headings': ['Rubik', 'sans-serif'],
