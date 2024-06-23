@@ -1,14 +1,13 @@
 import { useState } from 'react'
 import { Dialog, Popover } from '@headlessui/react'
-import styles from '@/styles/customText.module.css'
 import Link from 'next/link'
 
 export default function Navbar() {
   const [mobileMenuOpen, setMobileMenuOpen] = useState(false)
 
   return (
-    <header className="bg-white text-gray-900 fixed w-full">
-      <nav className="mx-auto flex max-w-7xl items-center justify-between p-6 lg:px-8 shadow-lg">
+    <header className="bg-transparent text-gray-900 fixed w-full">
+      <nav className="bg-white mx-auto flex max-w-7xl items-center justify-between p-6 lg:px-8 shadow-lg">
         {/* Logo */}
         <div className="flex lg:flex-1">
           <a href={"#top"}>

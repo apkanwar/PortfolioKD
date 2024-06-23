@@ -22,8 +22,11 @@ module.exports = {
         'dText': ['Montserrat', 'sans-serif'],
         'numbers': ['Inter', 'sans-serif'],
         'main': ['League Spartan', 'sans-serif']
-      }
+      },
+
     }
   },
-  plugins: [],
+  plugins: [
+    
+  ],
 }

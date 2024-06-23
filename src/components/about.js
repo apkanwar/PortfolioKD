@@ -4,10 +4,10 @@ export default function About() {
     const [data, setData] = useState([]);
 
     useEffect(() => {
-        fetchProjectOverview();
+        fetchAboutInfo();
     }, []);
 
-    const fetchProjectOverview = async () => {
+    const fetchAboutInfo = async () => {
         try {
             const response = await fetch('/api/aboutInfo');
             if (!response.ok) {
@@ -25,9 +25,9 @@ export default function About() {
         <section className='bg-gradient-to-b from-artic-blue to-white'>
             <div id="about" className="max-w-7xl mx-auto pb-16">
                 <div className="flex flex-col items-center justify-center font-dText text-5xl font-bold pb-12">
-                    <hr class="h-px w-full my-8 bg-gray-300 border-0 dark:bg-gray-700" />
+                    <hr className="h-px w-full my-8 bg-gray-300 border-0 dark:bg-gray-700" />
                     <h1>ABOUT</h1>
-                    <hr class="h-px w-full my-8 bg-gray-300 border-0 dark:bg-gray-700"/>
+                    <hr className="h-px w-full my-8 bg-gray-300 border-0 dark:bg-gray-700"/>
                 </div>
                 <div className="grid grid-cols-3 gap-4 max-w-6xl mx-auto">
                     <div className="flex items-center justify-center">
@@ -35,7 +35,7 @@ export default function About() {
                     </div>
                     <div className="flex flex-col gap-4 col-span-2">
                         {data.map(({ paragraph }) => (
-                            <p className="text-lg font-dText">
+                            <p key={paragraph} className="text-lg font-dText">
                                 {paragraph}
                             </p>
                         ))}
