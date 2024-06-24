@@ -29,7 +29,6 @@ export default function Reviews() {
     var SliderSettings = {
         autoFill: true,
         speed: 120,
-        pauseOnHover: true,
         play: SliderPlay
     };
 
@@ -73,7 +72,7 @@ export default function Reviews() {
     }
 
     return (
-        <section className="bg-gradient-to-b from-white to-artic-blue">
+        <section id="reviews" className="bg-gradient-to-b from-white to-artic-blue">
             <div className="py-16 max-w-7xl mx-auto">
                 <div className="flex flex-col items-center justify-center font-dText text-5xl font-bold">
                     <hr className="h-px w-full my-8 bg-gray-300 border-0 dark:bg-gray-700" />

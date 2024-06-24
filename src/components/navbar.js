@@ -6,8 +6,8 @@ export default function Navbar() {
   const [mobileMenuOpen, setMobileMenuOpen] = useState(false)
 
   return (
-    <header className="bg-transparent text-gray-900 fixed w-full">
-      <nav className="bg-white mx-auto flex max-w-7xl items-center justify-between p-6 lg:px-8 shadow-lg">
+    <header className="bg-transparent text-gray-900 fixed w-full z-50">
+      <nav className="bg-white mx-auto flex max-w-7xl items-center justify-between p-6 lg:px-8 shadow-lg rounded-b-md">
         {/* Logo */}
         <div className="flex lg:flex-1">
           <a href={"#top"}>
@@ -20,22 +20,17 @@ export default function Navbar() {
           <a href={"#about"} className="px-3 py-1.5 rounded hover:bg-zinc-200 transition ease-in duration-200">
             About Me
           </a>
-          <a href={"/"} className="px-3 py-1.5 rounded hover:bg-zinc-200 transition ease-in duration-200">
+          <a href={"#reviews"} className="px-3 py-1.5 rounded hover:bg-zinc-200 transition ease-in duration-200">
             Reviews
           </a>
-          <a href={"/"} className="px-3 py-1.5 rounded hover:bg-zinc-200 transition ease-in duration-200">
-            Benefits
-          </a>
-          <a href={"/"} className="px-3 py-1.5 rounded hover:bg-zinc-200 transition ease-in duration-200">
+          <a href={"#contact"} className="px-3 py-1.5 rounded hover:bg-zinc-200 transition ease-in duration-200">
             Contact
           </a>
         </Popover.Group>
 
         {/* Right Buttons */}
-        <div className="hidden lg:flex lg:flex-1 lg:justify-end">
-          <Link href={"/"}>
-            <img className="h-10 w-auto rounded" src="bmo.png" alt="BMO Logo" />
-          </Link>
+        <div className="hidden lg:flex lg:flex-1 lg:justify-end cursor-default">
+          <img className="h-10 w-auto rounded" src="bmo.png" alt="BMO Logo" />
         </div>
       </nav>
 

@@ -1,8 +1,10 @@
-import About from "@/components/about";
-import Intro from "@/components/intro";
-import Navbar from "@/components/navbar";
-import Reviews from "@/components/reviews";
 import Head from "next/head";
+import Navbar from "@/components/navbar";
+import Intro from "@/components/intro";
+import About from "@/components/about";
+import Reviews from "@/components/reviews";
+import ContactForm from "@/components/contact";
+import Footer from "@/components/footer";
 
 export default function Home() {
   return (
@@ -15,6 +17,8 @@ export default function Home() {
       <Intro />
       <About />
       <Reviews />
+      <ContactForm />
+      <Footer />
     </>
   )
 }
