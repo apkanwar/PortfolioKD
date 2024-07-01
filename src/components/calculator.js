@@ -80,7 +80,7 @@ export default function Calculator() {
         <section className="bg-gradient-to-b from-white to-artic-blue">
             <div className="flex flex-col max-w-7xl mx-auto">
                 <form onSubmit={calculateMortgage} autoComplete="off">
-                    <div className="flex flex-row flex-wrap justify-between items-end pt-36 mx-8">
+                    <div className="flex flex-row flex-wrap gap-4 xl:gap-0 lg:justify-between items-end pt-36 mx-8">
                         <Inputs_IconLeft id={"mAmount"} label={"Mortgage Amount"} icon={"$"} placeholder={"100,000,000"} />
                         <Inputs_Numbers id={"rate"} label={"Interest Rate"} icon={"%"} placeholder={"5.00"} min={0.00} max={100.00} step={0.01} />
                         <Inputs_Numbers id={"aPeriod"} label={"Amortization Period"} icon={"years"} placeholder={"10"} min={10} max={30} step={1} />

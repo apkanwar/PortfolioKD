@@ -1,3 +1,4 @@
+import Image from "next/image";
 import { useEffect, useState } from "react";
 
 export default function About() {
@@ -29,11 +30,11 @@ export default function About() {
                     <h1>ABOUT</h1>
                     <hr className="h-px w-full my-8 bg-gray-300 border-0 dark:bg-gray-700"/>
                 </div>
-                <div className="grid grid-cols-3 gap-4 max-w-6xl mx-auto">
+                <div className="grid lg:grid-cols-3 gap-4 max-w-6xl mx-auto grid-col-1">
                     <div className="flex items-center justify-center">
-                        <img src="profile.png" alt="Profile Picture" className="rounded-full w-64" />
+                        <Image src="/profile.png" alt="Profile Picture" className="rounded-full" width={256} height={320} priority={false} />
                     </div>
-                    <div className="flex flex-col gap-4 col-span-2">
+                    <div className="flex flex-col gap-4 lg:col-span-2 items-center text-center lg:text-start lg:items-start mx-8">
                         {data.map(({ paragraph }) => (
                             <p key={paragraph} className="text-lg font-dText">
                                 {paragraph}
