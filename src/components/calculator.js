@@ -27,7 +27,7 @@ export default function Calculator() {
             [e.target.paymentFrequency.name]: e.target.paymentFrequency.value,
             [e.target.term.name]: e.target.term.value
         }
-        const monthlyInterestRate = submittedMortgageData.rate / 100 / 12;
+        const monthlyInterestRate = submittedMortgageData.rate / 100 / submittedMortgageData.paymentFrequency;
         const plusR = (1 + monthlyInterestRate) ** (submittedMortgageData.aPeriod * submittedMortgageData.paymentFrequency);
         const plusR2 = (1 + monthlyInterestRate) ** (submittedMortgageData.term * submittedMortgageData.paymentFrequency);
         const monthlyMortgagePayment = submittedMortgageData.mAmount * (monthlyInterestRate * plusR) / (plusR - 1);
@@ -41,7 +41,7 @@ export default function Calculator() {
             },
             {
                 id: 2,
-                name: "Monthly Mortgage Payment",
+                name: "Mortgage Payment",
                 aValue: '$ ' + formatNumbers(monthlyMortgagePayment),
                 tValue: '$ ' + formatNumbers(monthlyMortgagePayment)
             },
