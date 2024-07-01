@@ -32,9 +32,9 @@ export default function NavbarHome() {
 
         {/* Right Buttons */}
         <div className="hidden lg:flex lg:flex-1 lg:justify-end cursor-default gap-4">
-          <a href='/mortgage-calculator'>
+          <Link href='/mortgage-calculator'>
             <CalculatorIcon className='h-10 text-green-600 cursor-pointer hover:text-green-500' />
-          </a>
+          </Link>
           <img className="h-10 w-auto rounded" src="bmo.png" alt="BMO Logo" />
         </div>
       </nav>

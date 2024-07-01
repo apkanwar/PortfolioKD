@@ -12,10 +12,10 @@ export default function NavbarDefault() {
       <nav className="bg-white mx-auto flex max-w-7xl items-center justify-between p-5 lg:px-8 shadow-lg rounded-b-md">
         {/* Logo */}
         <div className="flex lg:flex-1 cursor-pointer">
-          <a href='/' className='flex flex-row gap-2 items-center hover:bg-zinc-200 transition ease-in duration-200 rounded-lg px-4 py-1'>
+          <Link href='/' className='flex flex-row gap-2 items-center hover:bg-zinc-200 transition ease-in duration-200 rounded-lg px-4 py-1'>
             <HomeIcon className='h-10 text-bmo-blue cursor-pointer' />
             <h2 className=' font-headings select-none'>Home</h2>
-          </a>
+          </Link>
         </div>
 
         {/* Middle Icons */}
