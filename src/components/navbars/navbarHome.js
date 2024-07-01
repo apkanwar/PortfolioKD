@@ -1,8 +1,10 @@
 import { useState } from 'react'
 import { Dialog, Popover } from '@headlessui/react'
 import Link from 'next/link'
+import { CalculatorIcon } from '@heroicons/react/24/outline'
 
-export default function Navbar() {
+
+export default function NavbarHome() {
   const [mobileMenuOpen, setMobileMenuOpen] = useState(false)
 
   return (
@@ -29,7 +31,10 @@ export default function Navbar() {
         </Popover.Group>
 
         {/* Right Buttons */}
-        <div className="hidden lg:flex lg:flex-1 lg:justify-end cursor-default">
+        <div className="hidden lg:flex lg:flex-1 lg:justify-end cursor-default gap-4">
+          <a href='/mortgage-calculator'>
+            <CalculatorIcon className='h-10 text-green-600 cursor-pointer hover:text-green-500' />
+          </a>
           <img className="h-10 w-auto rounded" src="bmo.png" alt="BMO Logo" />
         </div>
       </nav>

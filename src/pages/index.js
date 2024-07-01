@@ -1,5 +1,5 @@
 import Head from "next/head";
-import Navbar from "@/components/navbar";
+import NavbarHome from "@/components/navbars/navbarHome";
 import Intro from "@/components/intro";
 import About from "@/components/about";
 import Reviews from "@/components/reviews";
@@ -13,7 +13,7 @@ export default function Home() {
         <title>KD Kanwar</title>
       </Head>
       
-      <Navbar />
+      <NavbarHome />
       <Intro />
       <About />
       <Reviews />

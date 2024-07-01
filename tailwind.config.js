@@ -21,7 +21,8 @@ module.exports = {
         'headings': ['Rubik', 'sans-serif'],
         'dText': ['Montserrat', 'sans-serif'],
         'numbers': ['Inter', 'sans-serif'],
-        'main': ['League Spartan', 'sans-serif']
+        'main': ['League Spartan', 'sans-serif'],
+        'jSans': ['Noto Sans', 'sans-serif']
       },
 
     }
