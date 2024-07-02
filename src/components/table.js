@@ -1,7 +1,7 @@
 
 export default function Table(props) {
     return (
-        <div className="overflow-x-auto shadow-md rounded-lg mt-12 mx-2 lg:mx-24">
+        <div className="overflow-x-auto shadow-md rounded-lg mx-2 lg:mx-24">
             <table className="w-full table-auto text-midnight-black">
                 <thead className="bg-bmo-blue uppercase font-dText text-white text-sm lg:text-xl">
                     <tr className="text-left border-b-4 border-white">

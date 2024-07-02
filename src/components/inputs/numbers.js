@@ -19,6 +19,7 @@ export default function Inputs_Numbers(props) {
             </label>
             <div className="relative rounded-md shadow-sm">
                 <input
+                    required
                     type="number"
                     name={props.id}
                     id={props.id}

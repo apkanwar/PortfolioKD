@@ -11,6 +11,7 @@ export default function Inputs_IconLeft(props) {
                     <span className="text-white sm:text-sm">{props.icon}</span>
                 </div>
                 <input
+                    required
                     type="text"
                     name={props.id}
                     id={props.id}

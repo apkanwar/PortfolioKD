@@ -73,7 +73,7 @@ export default function Calculator() {
             "interestPayment": (submittedMortgageData.aPeriod * submittedMortgageData.paymentFrequency * monthlyMortgagePayment) - submittedMortgageData.mAmount
         })
 
-        document.getElementById("cDetailsSection").style.visibility = "visible";
+        document.getElementById("cover").style.visibility = "hidden";
     }
 
     return (
@@ -90,14 +90,20 @@ export default function Calculator() {
                             { name: 'Semi-Monthly', value: 24 },
                             { name: 'Monthly', value: 12 }]}
                         />
-                        <Inputs_Numbers id={"term"} label={"Term"} icon={"years"} placeholder={"5"} min={1} max={10} step={1} />
+                        <Inputs_Numbers id={"term"} label={"Term"} icon={"years"} placeholder={"5"} min={1} max={20} step={1} />
 
                         <button type="submit" className="bg-bmo-blue cursor-pointer text-white rounded-full py-2 px-8 hover:bg-opacity-80 transition-opacity duration-300 text-lg font-medium font-headings">
                             Calculate
                         </button>
                     </div>
                 </form>
-                <div id="cDetailsSection" className="invisible">
+                <div id="cDetailsSection" className="relative my-12">
+                    <div id="cover" className="absolute w-full h-full rounded-3xl flex flex-col items-center justify-center gap-8 backdrop-blur-sm bg-green-100/80 border-green-500 border-2">
+                        <h2 className="font-dText font-semibold text-6xl">Detailed Report</h2>
+                        <p className="font-jSans text-2xl">
+                            Enter Your Mortgage Values to Get a Detailed Report!
+                        </p>
+                    </div>
                     <Table content={dataNeeded} />
                     <CalculationDetails data={graphData} />
                 </div>

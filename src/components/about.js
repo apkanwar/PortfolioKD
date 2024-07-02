@@ -40,9 +40,9 @@ export default function About() {
                                 {paragraph}
                             </p>
                         ))}
-                        <button className="bg-bmo-blue text-white mt-8 rounded-full py-5 px-14 hover:bg-opacity-90 transition-opacity duration-300 text-2xl font-medium font-headings w-fit">
+                        <a href="#contact" className="bg-bmo-blue text-white mt-8 rounded-full py-5 px-14 hover:bg-opacity-90 transition-opacity duration-300 text-2xl font-medium font-headings w-fit">
                             Get in Touch
-                        </button>
+                        </a>
                     </div>
                 </div>
             </div>

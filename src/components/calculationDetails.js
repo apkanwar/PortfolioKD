@@ -160,7 +160,7 @@ export default function CalculationDetails(props) {
     }
 
     return (
-        <div className="flex flex-col mx-8 my-12">
+        <div className="flex flex-col mx-8 mt-12">
             <h2 className="font-dText text-3xl font-semibold mb-12">Details</h2>
             <div className="flex flex-row gap-4">
                 <canvas className="max-w-[50%] h-[500px]" ref={chartRef}></canvas>
