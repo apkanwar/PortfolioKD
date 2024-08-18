@@ -14,7 +14,7 @@ export default function Inputs_Select(props) {
             <input readOnly className='hidden' name={props.id} id={props.id} value={selected.value} />
 
             <Listbox value={selected} onChange={setSelected}>
-                <div className="relative">
+                <div className="relative z-10">
 
                     <Listbox.Button className={`relative cursor-default ring-1 ring-inset ring-gray-300 rounded-lg bg-white py-2 pl-3 pr-10 text-left focus:ring-2 focus:ring-inset focus:ring-indigo-600 sm:text-sm w-48`}>
                         <span className="block truncate">{selected.name}</span>

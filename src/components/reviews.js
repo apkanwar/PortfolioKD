@@ -3,6 +3,7 @@ import Marquee from "react-fast-marquee";
 import styles from "@/styles/customText.module.css"
 import { PauseCircleIcon, PlayCircleIcon } from '@heroicons/react/24/outline'
 import Image from "next/image";
+import Link from "next/link";
 
 
 export default function Reviews() {
@@ -80,10 +81,16 @@ export default function Reviews() {
                     <h1>REVIEWS</h1>
                     <hr className="h-px w-full my-8 bg-gray-300 border-0 dark:bg-gray-700" />
                 </div>
-                <div className="w-10 float-right mr-8 mb-8 text-bmo-blue hover:bg-bmo-blue/25 rounded-full cursor-pointer" onClick={SliderButton}>
-                    <PauseCircleIcon id="pauseButton" className="size-6" />
-                    <PlayCircleIcon id="playButton" className="size-6 hidden" />
+                <div className="flex flex-row justify-between items-center">
+                    <Link target="_blank" href={"https://www.google.com/search?q=kanwardeep+kanwar&oq=kanwardeep+kanwar&gs_lcrp=EgZjaHJvbWUyBggAEEUYOTIKCAEQABiABBiiBDIKCAIQABiABBiiBDIKCAMQABiABBiiBNIBCDk2OTRqMGoxqAIAsAIA&sourceid=chrome&ie=UTF-8&lqi=ChFrYW53YXJkZWVwIGthbndhckibpaTD_66AgAhaGxAAEAEYABgBIhFrYW53YXJkZWVwIGthbndhcpIBD21vcnRnYWdlX2xlbmRlcqoBUhABKhUiEWthbndhcmRlZXAga2Fud2FyKAAyIBABIhzkqNgsvYEHIQFj62mMSHJx1Z85RqfcZuZRC9iaMhUQAiIRa2Fud2FyZGVlcCBrYW53YXI#lkt=LocalPoiReviews&lrd=0x882b15a18dfcacc1:0x1585542428599dfa,3,,,,&rlimm=1550738160971521530"} class="ml-8 mb-8 text-white font-semibold cursor-pointer rounded-full bg-gradient-to-r from-teal-400 to-blue-500 hover:from-pink-500 hover:to-orange-500 py-2 px-8 duration-300">
+                        Write a Review
+                    </Link>
+                    <div className="w-10 mr-8 mb-8 text-bmo-blue hover:bg-bmo-blue/25 rounded-full cursor-pointer" onClick={SliderButton}>
+                        <PauseCircleIcon id="pauseButton" className="size-6" />
+                        <PlayCircleIcon id="playButton" className="size-6 hidden" />
+                    </div>
                 </div>
+
                 <Marquee {...SliderSettings}>
                     {data.map(({ AuthorName, ProfileImage, ReviewContent, Time, Rating }) => (
                         <div key={Time} className="border-2 mx-8 flex flex-col gap-5 bg-white border-bmo-blue rounded-lg p-10 min-w-[20rem] max-w-xs lg:max-w-md lg:min-w-[28rem] max-h-[350px] min-h-[350px]">
