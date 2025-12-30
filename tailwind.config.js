@@ -2,7 +2,13 @@
 module.exports = {
   darkMode: 'class',
   images: {
-    domains: ['lh3.googleusercontent.com'], // Add your image domain here
+    remotePatterns: [
+      {
+        protocol: "https",
+        hostname: "lh3.googleusercontent.com",
+        pathname: "/**",
+      }
+    ]
   },
   content: [
     './src/pages/**/*.{js,ts,jsx,tsx,mdx}',
